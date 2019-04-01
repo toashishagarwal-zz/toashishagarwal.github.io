@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>	
+<link href="./css/leaf.css" rel="stylesheet">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<script src="./angular.js"></script>
+<script src="./ui-bootstrap-tpls.js"></script>
+
+<script src="./js/leaf.js"></script>
+<script src="./js/component/leaf.component.js"></script>
+<script src="./js/directive/file.watcher.dir.js"></script>
+<script src="./js/controller/img.upload.ctrl.js"></script>
+<script src="./js/controller/table-generator.ctrl.js"></script>
+<script src="./js/service/leaf.util.svc.js"></script>
+
+<script src="./app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl as mc">
+	<leaf-editor ng-model="mc.userTxt"></leaf-editor>
+	<ul>
+		<li>New words would be in blue color</li>
+		<li>To delete already filled text, select and press "DELETE" button</li>
+		<li>To delete already filled image, select and press "DELETE" button</li>
+		<li>The deleted texts will be striked out and the image will slightly fade away</li>
+		<li>New words can be deleted with backspace</li>
+	</ul>
+</body>
+</html>
